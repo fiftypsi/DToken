@@ -1,0 +1,45 @@
+Minimum raise = $3m worth of ethereum
+
+crowdsale
+  - refundable
+  - pausable
+  - finalizable
+  - ownable
+  - safemath
+
+token
+  - set initial supply
+  - set owner
+  - name
+  - symbol
+  - decimals
+  - ERC20
+    - transfer
+    - transferFrom
+    - totalSupply
+    - balanceOf
+    - approve
+    - allowance
+    - event Transfer
+    - event Approval
+  - private sale, presale1, presale2, presale3, presale4
+  - fiat sale, earmarking
+
+  objectives
+  - deploy contract
+  - buy with Mist Wallet, Metamask, 3rd party(which?)
+  - test private sale
+    - buy $1m worth of tokens, check bonus
+  - test pre-sale periods
+    - buy $1m worth of tokens, check date and bonus
+  - test refund if period over & min met
+  - test refund if period not over & min not met
+  - test refund if period over & min not met
+    - withdraw ETH from vault
+  - simulate and test Exchange (ERC20), mainly approve, allowance and transferFrom
+  - test buying during paused/unpaused
+  - test buying before after sale finalized
+
+  suggest
+  contracts/library
+  contracts/TokenSale.sol
