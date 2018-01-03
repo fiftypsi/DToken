@@ -2,21 +2,8 @@ pragma solidity ^0.4.18;
 
 import "./CappedCrowdsale.sol";
 import "./RefundableCrowdsale.sol";
-import "./MintableToken.sol";
-import "./Pausable.sol";
 
-/**
- * @title SampleCrowdsaleToken
- * @dev Very simple ERC20 Token that can be minted.
- * It is meant to be used in a crowdsale contract.
- */
-contract SampleCrowdsaleToken is MintableToken {
 
-  string public constant name = "Sample Crowdsale Token";
-  string public constant symbol = "SCT";
-  uint8 public constant decimals = 18;
-
-}
 
 /**
  * @title SampleCrowdsale
@@ -29,21 +16,18 @@ contract SampleCrowdsaleToken is MintableToken {
  * After adding multiple features it's good practice to run integration tests
  * to ensure that subcontracts works together as intended.
  */
-contract SampleCrowdsale is CappedCrowdsale, RefundableCrowdsale, Pausable {
+contract KieganCrowdsale is CappedCrowdsale, RefundableCrowdsale {
 
-  function SampleCrowdsale(uint256 _startTime, uint256 _endTime, uint256 _rate, uint256 _goal, uint256 _cap, address _wallet) public
+  function KieganCrowdsale(uint256 _startTime, uint256 _endTime, uint256 _rate, uint256 _goal, uint256 _cap, address _wallet, address _tokenContract) public
     CappedCrowdsale(_cap)
     FinalizableCrowdsale()
     RefundableCrowdsale(_goal)
-    Crowdsale(_startTime, _endTime, _rate, _wallet)
+    Crowdsale(_startTime, _endTime, _rate, _wallet, _tokenContract)
   {
     //As goal needs to be met for a successful crowdsale
     //the value needs to less or equal than a cap which is limit for accepted funds
     require(_goal <= _cap);
   }
 
-  function createTokenContract() internal returns (MintableToken) {
-    return new SampleCrowdsaleToken();
-  }
 
 }
