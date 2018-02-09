@@ -1,5 +1,8 @@
 pragma solidity ^0.4.18;
 
+// rename wallet to multisigVault
+// made constructor takes no arguments and added setMultisigVault function
+
 import './SafeMath.sol';
 import './Ownable.sol';
 
@@ -15,16 +18,14 @@ contract RefundVault is Ownable {
   enum State { Active, Refunding, Closed }
 
   mapping (address => uint256) public deposited;
-  address public wallet;
+  address public multisigVault;
   State public state;
 
   event Closed();
   event RefundsEnabled();
   event Refunded(address indexed beneficiary, uint256 weiAmount);
 
-  function RefundVault(address _wallet) public {
-    require(_wallet != address(0));
-    wallet = _wallet;
+  function RefundVault() public {
     state = State.Active;
   }
 
@@ -37,7 +38,13 @@ contract RefundVault is Ownable {
     require(state == State.Active);
     state = State.Closed;
     Closed();
-    wallet.transfer(this.balance);
+    multisigVault.transfer(this.balance);
+  }
+
+  function setMultisigVault(address _multisigVault) public onlyOwner {
+    if (_multisigVault != address(0)) {
+      multisigVault = _multisigVault;
+    }
   }
 
   function enableRefunds() onlyOwner public {

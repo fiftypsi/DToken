@@ -1,0 +1,421 @@
+{
+  "contractName": "HasNoTokens",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "token",
+          "type": "address"
+        }
+      ],
+      "name": "reclaimToken",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "from_",
+          "type": "address"
+        },
+        {
+          "name": "value_",
+          "type": "uint256"
+        },
+        {
+          "name": "data_",
+          "type": "bytes"
+        }
+      ],
+      "name": "tokenFallback",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    }
+  ],
+  "bytecode": "0x6060604052336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555061056f806100536000396000f300606060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806317ffc320146100675780638da5cb5b146100a0578063c0ee0b8a146100f5578063f2fde38b1461014b575b600080fd5b341561007257600080fd5b61009e600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610184565b005b34156100ab57600080fd5b6100b36102f1565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561010057600080fd5b610149600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919080359060200190919080359060200190820180359060200191909192905050610316565b005b341561015657600080fd5b610182600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061031b565b005b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156101e157600080fd5b8173ffffffffffffffffffffffffffffffffffffffff166370a08231306000604051602001526040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b151561028457600080fd5b6102c65a03f1151561029557600080fd5b5050506040518051905090506102ed6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16828473ffffffffffffffffffffffffffffffffffffffff166104709092919063ffffffff16565b5050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561037657600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141515156103b257600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b8273ffffffffffffffffffffffffffffffffffffffff1663a9059cbb83836000604051602001526040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b151561051b57600080fd5b6102c65a03f1151561052c57600080fd5b50505060405180519050151561053e57fe5b5050505600a165627a7a72305820945be4867a475c9d4e7cbea33288ebb8631a702d6b7bb4db79c227a8859626960029",
+  "deployedBytecode": "0x606060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806317ffc320146100675780638da5cb5b146100a0578063c0ee0b8a146100f5578063f2fde38b1461014b575b600080fd5b341561007257600080fd5b61009e600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610184565b005b34156100ab57600080fd5b6100b36102f1565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561010057600080fd5b610149600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919080359060200190919080359060200190820180359060200191909192905050610316565b005b341561015657600080fd5b610182600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061031b565b005b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156101e157600080fd5b8173ffffffffffffffffffffffffffffffffffffffff166370a08231306000604051602001526040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b151561028457600080fd5b6102c65a03f1151561029557600080fd5b5050506040518051905090506102ed6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16828473ffffffffffffffffffffffffffffffffffffffff166104709092919063ffffffff16565b5050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561037657600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141515156103b257600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b8273ffffffffffffffffffffffffffffffffffffffff1663a9059cbb83836000604051602001526040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b151561051b57600080fd5b6102c65a03f1151561052c57600080fd5b50505060405180519050151561053e57fe5b5050505600a165627a7a72305820945be4867a475c9d4e7cbea33288ebb8631a702d6b7bb4db79c227a8859626960029",
+  "sourceMap": "364:437:9:-;;;529:10:12;521:5;;:18;;;;;;;;;;;;;;;;;;364:437:9;;;;;;",
+  "deployedSourceMap": "364:437:9:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;592:152:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;247:20:12;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;657:139:9;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;867:173:12;;;;;;;;;;;;;;;;;;;;;;;;;;;;592:152:1;658:15;680:5:12;;;;;;;;;;;666:19;;:10;:19;;;658:28;;;;;;;;676:5:1;:15;;;692:4;676:21;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;658:39;;704:34;723:5;;;;;;;;;;;730:7;704:5;:18;;;;:34;;;;;:::i;:::-;592:152;;:::o;247:20:12:-;;;;;;;;;;;;;:::o;657:139:9:-;782:8;;;867:173:12;680:5;;;;;;;;;;;666:19;;:10;:19;;;658:28;;;;;;;;964:1;944:22;;:8;:22;;;;936:31;;;;;;;;1002:8;974:37;;995:5;;;;;;;;;;;974:37;;;;;;;;;;;;1026:8;1018:5;;:16;;;;;;;;;;;;;;;;;;867:173;:::o;381:122:15:-;471:5;:14;;;486:2;490:5;471:25;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;464:33;;;;;;381:122;;;:::o",
+  "source": "pragma solidity ^0.4.18;\r\n\r\nimport \"./CanReclaimToken.sol\";\r\n\r\n\r\n/**\r\n * @title Contracts that should not own Tokens\r\n * @author Remco Bloemen <remco@2π.com>\r\n * @dev This blocks incoming ERC223 tokens to prevent accidental loss of tokens.\r\n * Should tokens (any ERC20Basic compatible) end up in the contract, it allows the\r\n * owner to reclaim the tokens.\r\n */\r\ncontract HasNoTokens is CanReclaimToken {\r\n\r\n /**\r\n  * @dev Reject all ERC223 compatible tokens\r\n  * @param from_ address The address that is transferring the tokens\r\n  * @param value_ uint256 the amount of the specified token\r\n  * @param data_ Bytes The data passed from the caller.\r\n  */\r\n  function tokenFallback(address from_, uint256 value_, bytes data_) external pure {\r\n    from_;\r\n    value_;\r\n    data_;\r\n    revert();\r\n  }\r\n\r\n}\r\n",
+  "sourcePath": "/home/bennyliaw/DToken/contracts/HasNoTokens.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/home/bennyliaw/DToken/contracts/HasNoTokens.sol",
+      "exportedSymbols": {
+        "HasNoTokens": [
+          950
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".18"
+          ]
+        },
+        "id": 927,
+        "name": "PragmaDirective",
+        "src": "0:24:9"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 129,
+          "absolutePath": "/home/bennyliaw/DToken/contracts/CanReclaimToken.sol",
+          "file": "./CanReclaimToken.sol",
+          "scope": 951,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 928,
+        "name": "ImportDirective",
+        "src": "28:31:9"
+      },
+      {
+        "attributes": {
+          "contractDependencies": [
+            128,
+            1158
+          ],
+          "contractKind": "contract",
+          "documentation": "@title Contracts that should not own Tokens\r\n@author Remco Bloemen <remco@2π.com>\r\n@dev This blocks incoming ERC223 tokens to prevent accidental loss of tokens.\r\nShould tokens (any ERC20Basic compatible) end up in the contract, it allows the\r\nowner to reclaim the tokens.\r",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            950,
+            128,
+            1158
+          ],
+          "name": "HasNoTokens",
+          "scope": 951
+        },
+        "children": [
+          {
+            "attributes": {
+              "arguments": [
+                null
+              ]
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "CanReclaimToken",
+                  "referencedDeclaration": 128,
+                  "type": "contract CanReclaimToken"
+                },
+                "id": 929,
+                "name": "UserDefinedTypeName",
+                "src": "388:15:9"
+              }
+            ],
+            "id": 930,
+            "name": "InheritanceSpecifier",
+            "src": "388:15:9"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "tokenFallback",
+              "payable": false,
+              "scope": 950,
+              "stateMutability": "pure",
+              "superFunction": null,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "from_",
+                      "scope": 949,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 931,
+                        "name": "ElementaryTypeName",
+                        "src": "680:7:9"
+                      }
+                    ],
+                    "id": 932,
+                    "name": "VariableDeclaration",
+                    "src": "680:13:9"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "value_",
+                      "scope": 949,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 933,
+                        "name": "ElementaryTypeName",
+                        "src": "695:7:9"
+                      }
+                    ],
+                    "id": 934,
+                    "name": "VariableDeclaration",
+                    "src": "695:14:9"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "data_",
+                      "scope": 949,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes calldata",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes",
+                          "type": "bytes storage pointer"
+                        },
+                        "id": 935,
+                        "name": "ElementaryTypeName",
+                        "src": "711:5:9"
+                      }
+                    ],
+                    "id": 936,
+                    "name": "VariableDeclaration",
+                    "src": "711:11:9"
+                  }
+                ],
+                "id": 937,
+                "name": "ParameterList",
+                "src": "679:44:9"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 938,
+                "name": "ParameterList",
+                "src": "738:0:9"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 932,
+                          "type": "address",
+                          "value": "from_"
+                        },
+                        "id": 939,
+                        "name": "Identifier",
+                        "src": "745:5:9"
+                      }
+                    ],
+                    "id": 940,
+                    "name": "ExpressionStatement",
+                    "src": "745:5:9"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 934,
+                          "type": "uint256",
+                          "value": "value_"
+                        },
+                        "id": 941,
+                        "name": "Identifier",
+                        "src": "757:6:9"
+                      }
+                    ],
+                    "id": 942,
+                    "name": "ExpressionStatement",
+                    "src": "757:6:9"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 936,
+                          "type": "bytes calldata",
+                          "value": "data_"
+                        },
+                        "id": 943,
+                        "name": "Identifier",
+                        "src": "770:5:9"
+                      }
+                    ],
+                    "id": 944,
+                    "name": "ExpressionStatement",
+                    "src": "770:5:9"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            null
+                          ],
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                null
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 2071,
+                              "type": "function () pure",
+                              "value": "revert"
+                            },
+                            "id": 945,
+                            "name": "Identifier",
+                            "src": "782:6:9"
+                          }
+                        ],
+                        "id": 946,
+                        "name": "FunctionCall",
+                        "src": "782:8:9"
+                      }
+                    ],
+                    "id": 947,
+                    "name": "ExpressionStatement",
+                    "src": "782:8:9"
+                  }
+                ],
+                "id": 948,
+                "name": "Block",
+                "src": "738:58:9"
+              }
+            ],
+            "id": 949,
+            "name": "FunctionDefinition",
+            "src": "657:139:9"
+          }
+        ],
+        "id": 950,
+        "name": "ContractDefinition",
+        "src": "364:437:9"
+      }
+    ],
+    "id": 951,
+    "name": "SourceUnit",
+    "src": "0:803:9"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-02-09T06:48:42.906Z"
+}

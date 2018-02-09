@@ -1,0 +1,461 @@
+{
+  "contractName": "DirectHomeCrowdsaleConfig",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "CROWDSALE_START_TIME",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "HARDCAP",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "CROWDSALE_END_TIME",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "CONTRIBUTION_MAX_NO_WHITELIST",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "SOFTCAP",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "TOKENS_PER_ETHER",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "CONTRIBUTION_MIN",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b61021d8061001e6000396000f300606060405260043610610083576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063389c6b8e146100885780633bd74880146100b157806344f6bc11146100da5780635655e37b14610103578063657123391461012c5780636b4a6ded14610155578063ba9bb8271461017e575b600080fd5b341561009357600080fd5b61009b6101a7565b6040518082815260200191505060405180910390f35b34156100bc57600080fd5b6100c46101af565b6040518082815260200191505060405180910390f35b34156100e557600080fd5b6100ed6101bd565b6040518082815260200191505060405180910390f35b341561010e57600080fd5b6101166101c5565b6040518082815260200191505060405180910390f35b341561013757600080fd5b61013f6101d2565b6040518082815260200191505060405180910390f35b341561016057600080fd5b6101686101df565b6040518082815260200191505060405180910390f35b341561018957600080fd5b6101916101e5565b6040518082815260200191505060405180910390f35b635a72588081565b690a968163f0a57b40000081565b635b38197f81565b68015af1d78b58c4000081565b68cb49b44ba602d8000081565b6103e881565b67016345785d8a0000815600a165627a7a72305820bcac64f3342aa716b3ce87152b04e8dd9b2dd1c8a976bf1f847eca05e8c052cc0029",
+  "deployedBytecode": "0x606060405260043610610083576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063389c6b8e146100885780633bd74880146100b157806344f6bc11146100da5780635655e37b14610103578063657123391461012c5780636b4a6ded14610155578063ba9bb8271461017e575b600080fd5b341561009357600080fd5b61009b6101a7565b6040518082815260200191505060405180910390f35b34156100bc57600080fd5b6100c46101af565b6040518082815260200191505060405180910390f35b34156100e557600080fd5b6100ed6101bd565b6040518082815260200191505060405180910390f35b341561010e57600080fd5b6101166101c5565b6040518082815260200191505060405180910390f35b341561013757600080fd5b61013f6101d2565b6040518082815260200191505060405180910390f35b341561016057600080fd5b6101686101df565b6040518082815260200191505060405180910390f35b341561018957600080fd5b6101916101e5565b6040518082815260200191505060405180910390f35b635a72588081565b690a968163f0a57b40000081565b635b38197f81565b68015af1d78b58c4000081565b68cb49b44ba602d8000081565b6103e881565b67016345785d8a0000815600a165627a7a72305820bcac64f3342aa716b3ce87152b04e8dd9b2dd1c8a976bf1f847eca05e8c052cc0029",
+  "sourceMap": "223:1006:3:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "223:1006:3:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;268:62;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;659:64;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;364:62;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;528:65;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;730:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1141:53;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;460:61;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;268:62;320:10;268:62;:::o;659:64::-;712:11;659:64;:::o;364:62::-;416:10;364:62;:::o;528:65::-;585:8;528:65;:::o;730:63::-;783:10;730:63;:::o;1141:53::-;1190:4;1141:53;:::o;460:61::-;512:9;460:61;:::o",
+  "source": "pragma solidity ^0.4.18;\r\n\r\n// ----------------------------------------------------------------------------\r\n// Token Sale Configuration\r\n// ----------------------------------------------------------------------------\r\n\r\n\r\ncontract DirectHomeCrowdsaleConfig  {\r\n\r\n    uint256 public constant CROWDSALE_START_TIME      = 1517443200; // 2018-02-01 00:00:00 UTC\r\n    uint256 public constant CROWDSALE_END_TIME        = 1530403199; // 2018-06-30 23:59:59 UTC\r\n    uint256 public constant CONTRIBUTION_MIN          = 0.1 ether;\r\n    uint256 public constant CONTRIBUTION_MAX_NO_WHITELIST  = 25 ether;    // maximum acceptable contribution without whitelisting\r\n    uint256 public constant HARDCAP                   =  50000 ether;\r\n    uint256 public constant SOFTCAP                   =  3750 ether;\r\n\r\n    //uint256 public constant TARGET_ETH_SOFT_CAP       = 100000;\r\n\r\n\r\n    // Default conversion rate when deployed, changable later by\r\n    // calling the setTokensPerWei function on TokenSale contract\r\n\r\n    // For illustration: tokens are priced at 1 USD/token.\r\n    // So if we have 800 USD/ETH -> 800 USD/ETH / 0.8 USD/token = ~1000\r\n    uint256 public constant TOKENS_PER_ETHER       = 1000; // 10**(uint256(18));  // eg\r\n\r\n}\r\n",
+  "sourcePath": "/home/bennyliaw/DToken/contracts/DirectHomeCrowdsaleConfig.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/home/bennyliaw/DToken/contracts/DirectHomeCrowdsaleConfig.sol",
+      "exportedSymbols": {
+        "DirectHomeCrowdsaleConfig": [
+          673
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".18"
+          ]
+        },
+        "id": 651,
+        "name": "PragmaDirective",
+        "src": "0:24:3"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            673
+          ],
+          "name": "DirectHomeCrowdsaleConfig",
+          "scope": 674
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": true,
+              "name": "CROWDSALE_START_TIME",
+              "scope": 673,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 652,
+                "name": "ElementaryTypeName",
+                "src": "268:7:3"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "31353137343433323030",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 1517443200",
+                  "value": "1517443200"
+                },
+                "id": 653,
+                "name": "Literal",
+                "src": "320:10:3"
+              }
+            ],
+            "id": 654,
+            "name": "VariableDeclaration",
+            "src": "268:62:3"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "CROWDSALE_END_TIME",
+              "scope": 673,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 655,
+                "name": "ElementaryTypeName",
+                "src": "364:7:3"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "31353330343033313939",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 1530403199",
+                  "value": "1530403199"
+                },
+                "id": 656,
+                "name": "Literal",
+                "src": "416:10:3"
+              }
+            ],
+            "id": 657,
+            "name": "VariableDeclaration",
+            "src": "364:62:3"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "CONTRIBUTION_MIN",
+              "scope": 673,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 658,
+                "name": "ElementaryTypeName",
+                "src": "460:7:3"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "302e31",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": "ether",
+                  "token": "number",
+                  "type": "int_const 100000000000000000",
+                  "value": "0.1"
+                },
+                "id": 659,
+                "name": "Literal",
+                "src": "512:9:3"
+              }
+            ],
+            "id": 660,
+            "name": "VariableDeclaration",
+            "src": "460:61:3"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "CONTRIBUTION_MAX_NO_WHITELIST",
+              "scope": 673,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 661,
+                "name": "ElementaryTypeName",
+                "src": "528:7:3"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "3235",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": "ether",
+                  "token": "number",
+                  "type": "int_const 25000000000000000000",
+                  "value": "25"
+                },
+                "id": 662,
+                "name": "Literal",
+                "src": "585:8:3"
+              }
+            ],
+            "id": 663,
+            "name": "VariableDeclaration",
+            "src": "528:65:3"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "HARDCAP",
+              "scope": 673,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 664,
+                "name": "ElementaryTypeName",
+                "src": "659:7:3"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "3530303030",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": "ether",
+                  "token": "number",
+                  "type": "int_const 50000000000000000000000",
+                  "value": "50000"
+                },
+                "id": 665,
+                "name": "Literal",
+                "src": "712:11:3"
+              }
+            ],
+            "id": 666,
+            "name": "VariableDeclaration",
+            "src": "659:64:3"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "SOFTCAP",
+              "scope": 673,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 667,
+                "name": "ElementaryTypeName",
+                "src": "730:7:3"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "33373530",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": "ether",
+                  "token": "number",
+                  "type": "int_const 3750000000000000000000",
+                  "value": "3750"
+                },
+                "id": 668,
+                "name": "Literal",
+                "src": "783:10:3"
+              }
+            ],
+            "id": 669,
+            "name": "VariableDeclaration",
+            "src": "730:63:3"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "TOKENS_PER_ETHER",
+              "scope": 673,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 670,
+                "name": "ElementaryTypeName",
+                "src": "1141:7:3"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "31303030",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 1000",
+                  "value": "1000"
+                },
+                "id": 671,
+                "name": "Literal",
+                "src": "1190:4:3"
+              }
+            ],
+            "id": 672,
+            "name": "VariableDeclaration",
+            "src": "1141:53:3"
+          }
+        ],
+        "id": 673,
+        "name": "ContractDefinition",
+        "src": "223:1006:3"
+      }
+    ],
+    "id": 674,
+    "name": "SourceUnit",
+    "src": "0:1231:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-02-09T06:48:42.903Z"
+}
