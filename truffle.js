@@ -1,3 +1,5 @@
+require('babel-register');
+require('babel-polyfill');
 var HDWalletProvider = require("truffle-hdwallet-provider");
 var mnemonic = "found crime side kingdom drum miss pioneer involve senior tell narrow riot";
 module.exports = {

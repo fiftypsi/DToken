@@ -16,7 +16,6 @@ import './DirectToken.sol';
 import './HasNoTokens.sol';
 import './RefundVault.sol';
 import "./DirectHomeCrowdsaleConfig.sol";
-//import "./DirectHomeVestingHelper.sol";
 
 /**
  * @title Crowdsale
@@ -58,6 +57,13 @@ contract DirectHomeCrowdsale is DirectHomeCrowdsaleConfig, Ownable, Pausable, Ha
   // Map of addresses that have been whitelisted in advance (and passed KYC).
   mapping(address => uint8) public whitelist;
 
+  struct VestingConfig {
+    uint64 cliff;
+    uint64 vesting;
+    uint64 start;        // 3 * 8 = 24 bytes
+  }
+  VestingConfig[] public vestingConfigs;
+
   /**
    * event for token purchase logging
    * @param purchaser who paid for the tokens
@@ -68,7 +74,7 @@ contract DirectHomeCrowdsale is DirectHomeCrowdsaleConfig, Ownable, Pausable, Ha
   event TokenPurchase(address indexed purchaser, address indexed beneficiary, uint256 weiAmount, uint256 tokens);
 
   event AuthorizedCreate(address beneficiary, uint256 tokens);
-  event AuthorizedCreateWithVesting(address beneficiary, uint256 tokens, address vesting);
+  event AuthorizedCreateWithVesting(address beneficiary, uint256 tokens, uint256 vestingConfigId);
   event WhitelistUpdated(address indexed beneficiary);
   event Finalized();
 
@@ -116,16 +122,22 @@ contract DirectHomeCrowdsale is DirectHomeCrowdsaleConfig, Ownable, Pausable, Ha
     AuthorizedCreate(recipient, tokens);
   }
 
+  function addVestingConfig(uint64 start, uint64 cliff, uint64 vesting) public onlyOwner returns (uint256) {
+    return vestingConfigs.push( VestingConfig(start, cliff, vesting) );
+  }
+
   /**
    * @dev Allows authorized acces to create tokens. This is used for Bitcoin and ERC20 deposits
    * @param recipient the recipient to receive tokens.
    * @param tokens number of tokens to be created.
    */
-  function authorizedCreateTokensVesting(address vesting, address recipient, uint256 tokens) public onlyOwner returns(address) {
+  function authorizedCreateTokensVesting(address recipient, uint256 tokens, uint256 vestingConfigId) public onlyOwner returns(address) {
     //address vesting = new PrivateSaleVesting(recipient);
-    token.mint(vesting, tokens);
-    AuthorizedCreateWithVesting(recipient, tokens, vesting);
-    return vesting;
+    require( vestingConfigId < vestingConfigs.length );
+    VestingConfig storage vestingConfig = vestingConfigs[vestingConfigId];
+    token.setVestingGrant(recipient, tokens, vestingConfig.start, vestingConfig.cliff, vestingConfig.vesting, false);
+    token.mint(recipient, tokens);
+    AuthorizedCreateWithVesting(recipient, tokens, vestingConfigId);
   }
 
   // sets wei amount raised from others (Fiat and alt coins)

@@ -80,15 +80,15 @@
       "type": "event"
     }
   ],
-  "bytecode": "0x6060604052341561000f57600080fd5b6104008061001e6000396000f300606060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806318160ddd1461005c57806370a0823114610085578063a9059cbb146100d2575b600080fd5b341561006757600080fd5b61006f61012c565b6040518082815260200191505060405180910390f35b341561009057600080fd5b6100bc600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610136565b6040518082815260200191505060405180910390f35b34156100dd57600080fd5b610112600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803590602001909190505061017e565b604051808215151515815260200191505060405180910390f35b6000600154905090565b60008060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b60008073ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff16141515156101bb57600080fd5b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054821115151561020857600080fd5b610259826000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205461039d90919063ffffffff16565b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055506102ec826000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020546103b690919063ffffffff16565b6000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a36001905092915050565b60008282111515156103ab57fe5b818303905092915050565b60008082840190508381101515156103ca57fe5b80915050929150505600a165627a7a723058202313e94b2df896d9b8e0d5995b219a34b91c2ac187293029fda6bdbe4ca3b2d80029",
-  "deployedBytecode": "0x606060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806318160ddd1461005c57806370a0823114610085578063a9059cbb146100d2575b600080fd5b341561006757600080fd5b61006f61012c565b6040518082815260200191505060405180910390f35b341561009057600080fd5b6100bc600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610136565b6040518082815260200191505060405180910390f35b34156100dd57600080fd5b610112600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803590602001909190505061017e565b604051808215151515815260200191505060405180910390f35b6000600154905090565b60008060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b60008073ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff16141515156101bb57600080fd5b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054821115151561020857600080fd5b610259826000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205461039d90919063ffffffff16565b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055506102ec826000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020546103b690919063ffffffff16565b6000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a36001905092915050565b60008282111515156103ab57fe5b818303905092915050565b60008082840190508381101515156103ca57fe5b80915050929150505600a165627a7a723058202313e94b2df896d9b8e0d5995b219a34b91c2ac187293029fda6bdbe4ca3b2d80029",
+  "bytecode": "0x6060604052341561000f57600080fd5b6104008061001e6000396000f300606060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806318160ddd1461005c57806370a0823114610085578063a9059cbb146100d2575b600080fd5b341561006757600080fd5b61006f61012c565b6040518082815260200191505060405180910390f35b341561009057600080fd5b6100bc600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610136565b6040518082815260200191505060405180910390f35b34156100dd57600080fd5b610112600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803590602001909190505061017e565b604051808215151515815260200191505060405180910390f35b6000600154905090565b60008060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b60008073ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff16141515156101bb57600080fd5b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054821115151561020857600080fd5b610259826000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205461039d90919063ffffffff16565b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055506102ec826000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020546103b690919063ffffffff16565b6000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a36001905092915050565b60008282111515156103ab57fe5b818303905092915050565b60008082840190508381101515156103ca57fe5b80915050929150505600a165627a7a72305820afdc92776f6b56e0dad13d5184000040a076cc35bcf39da048979ff383ed8d670029",
+  "deployedBytecode": "0x606060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806318160ddd1461005c57806370a0823114610085578063a9059cbb146100d2575b600080fd5b341561006757600080fd5b61006f61012c565b6040518082815260200191505060405180910390f35b341561009057600080fd5b6100bc600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610136565b6040518082815260200191505060405180910390f35b34156100dd57600080fd5b610112600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803590602001909190505061017e565b604051808215151515815260200191505060405180910390f35b6000600154905090565b60008060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b60008073ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff16141515156101bb57600080fd5b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054821115151561020857600080fd5b610259826000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205461039d90919063ffffffff16565b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055506102ec826000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020546103b690919063ffffffff16565b6000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a36001905092915050565b60008282111515156103ab57fe5b818303905092915050565b60008082840190508381101515156103ca57fe5b80915050929150505600a165627a7a72305820afdc92776f6b56e0dad13d5184000040a076cc35bcf39da048979ff383ed8d670029",
   "sourceMap": "182:1158:0:-;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "182:1158:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;383:85;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1226:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;629:388;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;383:85;427:7;450:12;;443:19;;383:85;:::o;1226:109::-;1282:15;1313:8;:16;1322:6;1313:16;;;;;;;;;;;;;;;;1306:23;;1226:109;;;:::o;629:388::-;692:4;728:1;713:17;;:3;:17;;;;705:26;;;;;;;;756:8;:20;765:10;756:20;;;;;;;;;;;;;;;;746:6;:30;;738:39;;;;;;;;873:32;898:6;873:8;:20;882:10;873:20;;;;;;;;;;;;;;;;:24;;:32;;;;:::i;:::-;850:8;:20;859:10;850:20;;;;;;;;;;;;;;;:55;;;;928:25;946:6;928:8;:13;937:3;928:13;;;;;;;;;;;;;;;;:17;;:25;;;;:::i;:::-;912:8;:13;921:3;912:13;;;;;;;;;;;;;;;:41;;;;981:3;960:33;;969:10;960:33;;;986:6;960:33;;;;;;;;;;;;;;;;;;1007:4;1000:11;;629:388;;;;:::o;870:113:16:-;928:7;956:1;951;:6;;944:14;;;;;;976:1;972;:5;965:12;;870:113;;;;:::o;1050:133::-;1108:7;1124:9;1140:1;1136;:5;1124:17;;1160:1;1155;:6;;1148:14;;;;;;1176:1;1169:8;;1050:133;;;;;:::o",
+  "deployedSourceMap": "182:1158:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;383:85;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1226:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;629:388;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;383:85;427:7;450:12;;443:19;;383:85;:::o;1226:109::-;1282:15;1313:8;:16;1322:6;1313:16;;;;;;;;;;;;;;;;1306:23;;1226:109;;;:::o;629:388::-;692:4;728:1;713:17;;:3;:17;;;;705:26;;;;;;;;756:8;:20;765:10;756:20;;;;;;;;;;;;;;;;746:6;:30;;738:39;;;;;;;;873:32;898:6;873:8;:20;882:10;873:20;;;;;;;;;;;;;;;;:24;;:32;;;;:::i;:::-;850:8;:20;859:10;850:20;;;;;;;;;;;;;;;:55;;;;928:25;946:6;928:8;:13;937:3;928:13;;;;;;;;;;;;;;;;:17;;:25;;;;:::i;:::-;912:8;:13;921:3;912:13;;;;;;;;;;;;;;;:41;;;;981:3;960:33;;969:10;960:33;;;986:6;960:33;;;;;;;;;;;;;;;;;;1007:4;1000:11;;629:388;;;;:::o;870:113:17:-;928:7;956:1;951;:6;;944:14;;;;;;976:1;972;:5;965:12;;870:113;;;;:::o;1050:133::-;1108:7;1124:9;1140:1;1136;:5;1124:17;;1160:1;1155;:6;;1148:14;;;;;;1176:1;1169:8;;1050:133;;;;;:::o",
   "source": "pragma solidity ^0.4.18;\r\n\r\n\r\nimport './ERC20Basic.sol';\r\nimport './SafeMath.sol';\r\n\r\n\r\n/**\r\n * @title Basic token\r\n * @dev Basic version of StandardToken, with no allowances.\r\n */\r\ncontract BasicToken is ERC20Basic {\r\n  using SafeMath for uint256;\r\n\r\n  mapping(address => uint256) balances;\r\n\r\n  uint256 totalSupply_;\r\n\r\n  /**\r\n  * @dev total number of tokens in existence\r\n  */\r\n  function totalSupply() public view returns (uint256) {\r\n    return totalSupply_;\r\n  }\r\n\r\n  /**\r\n  * @dev transfer token for a specified address\r\n  * @param _to The address to transfer to.\r\n  * @param _value The amount to be transferred.\r\n  */\r\n  function transfer(address _to, uint256 _value) public returns (bool) {\r\n    require(_to != address(0));\r\n    require(_value <= balances[msg.sender]);\r\n\r\n    // SafeMath.sub will throw if there is not enough balance.\r\n    balances[msg.sender] = balances[msg.sender].sub(_value);\r\n    balances[_to] = balances[_to].add(_value);\r\n    Transfer(msg.sender, _to, _value);\r\n    return true;\r\n  }\r\n\r\n  /**\r\n  * @dev Gets the balance of the specified address.\r\n  * @param _owner The address to query the the balance of.\r\n  * @return An uint256 representing the amount owned by the passed address.\r\n  */\r\n  function balanceOf(address _owner) public view returns (uint256 balance) {\r\n    return balances[_owner];\r\n  }\r\n\r\n}\r\n",
-  "sourcePath": "/home/bennyliaw/DToken/contracts/BasicToken.sol",
+  "sourcePath": "/mnt/c/Shared/DToken/contracts/BasicToken.sol",
   "ast": {
     "attributes": {
-      "absolutePath": "/home/bennyliaw/DToken/contracts/BasicToken.sol",
+      "absolutePath": "/mnt/c/Shared/DToken/contracts/BasicToken.sol",
       "exportedSymbols": {
         "BasicToken": [
           95
@@ -111,8 +111,8 @@
       },
       {
         "attributes": {
-          "SourceUnit": 926,
-          "absolutePath": "/home/bennyliaw/DToken/contracts/ERC20Basic.sol",
+          "SourceUnit": 980,
+          "absolutePath": "/mnt/c/Shared/DToken/contracts/ERC20Basic.sol",
           "file": "./ERC20Basic.sol",
           "scope": 96,
           "symbolAliases": [
@@ -126,8 +126,8 @@
       },
       {
         "attributes": {
-          "SourceUnit": 1551,
-          "absolutePath": "/home/bennyliaw/DToken/contracts/SafeMath.sol",
+          "SourceUnit": 1676,
+          "absolutePath": "/mnt/c/Shared/DToken/contracts/SafeMath.sol",
           "file": "./SafeMath.sol",
           "scope": 96,
           "symbolAliases": [
@@ -142,14 +142,14 @@
       {
         "attributes": {
           "contractDependencies": [
-            925
+            979
           ],
           "contractKind": "contract",
           "documentation": "@title Basic token\r\n@dev Basic version of StandardToken, with no allowances.\r",
           "fullyImplemented": true,
           "linearizedBaseContracts": [
             95,
-            925
+            979
           ],
           "name": "BasicToken",
           "scope": 96
@@ -166,7 +166,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "ERC20Basic",
-                  "referencedDeclaration": 925,
+                  "referencedDeclaration": 979,
                   "type": "contract ERC20Basic"
                 },
                 "id": 4,
@@ -184,7 +184,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "SafeMath",
-                  "referencedDeclaration": 1550,
+                  "referencedDeclaration": 1675,
                   "type": "library SafeMath"
                 },
                 "id": 6,
@@ -288,7 +288,7 @@
               "payable": false,
               "scope": 95,
               "stateMutability": "view",
-              "superFunction": 900,
+              "superFunction": 954,
               "visibility": "public"
             },
             "children": [
@@ -384,7 +384,7 @@
               "payable": false,
               "scope": 95,
               "stateMutability": "nonpayable",
-              "superFunction": 916,
+              "superFunction": 970,
               "visibility": "public"
             },
             "children": [
@@ -510,7 +510,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 2070,
+                              "referencedDeclaration": 2225,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -646,7 +646,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 2070,
+                              "referencedDeclaration": 2225,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -725,7 +725,7 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 2067,
+                                          "referencedDeclaration": 2222,
                                           "type": "msg",
                                           "value": "msg"
                                         },
@@ -813,7 +813,7 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 2067,
+                                      "referencedDeclaration": 2222,
                                       "type": "msg",
                                       "value": "msg"
                                     },
@@ -859,7 +859,7 @@
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "member_name": "sub",
-                                  "referencedDeclaration": 1525,
+                                  "referencedDeclaration": 1650,
                                   "type": "function (uint256,uint256) pure returns (uint256)"
                                 },
                                 "children": [
@@ -905,7 +905,7 @@
                                               "overloadedDeclarations": [
                                                 null
                                               ],
-                                              "referencedDeclaration": 2067,
+                                              "referencedDeclaration": 2222,
                                               "type": "msg",
                                               "value": "msg"
                                             },
@@ -1041,7 +1041,7 @@
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "member_name": "add",
-                                  "referencedDeclaration": 1549,
+                                  "referencedDeclaration": 1674,
                                   "type": "function (uint256,uint256) pure returns (uint256)"
                                 },
                                 "children": [
@@ -1158,7 +1158,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 924,
+                              "referencedDeclaration": 978,
                               "type": "function (address,address,uint256)",
                               "value": "Transfer"
                             },
@@ -1184,7 +1184,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 2067,
+                                  "referencedDeclaration": 2222,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -1284,7 +1284,7 @@
               "payable": false,
               "scope": 95,
               "stateMutability": "view",
-              "superFunction": 907,
+              "superFunction": 961,
               "visibility": "public"
             },
             "children": [
@@ -1435,5 +1435,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2018-02-09T06:48:42.901Z"
+  "updatedAt": "2018-02-14T06:09:52.126Z"
 }
